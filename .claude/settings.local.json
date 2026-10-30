@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(C:\\Users\\win11\\jarvis\\tools\\whisper-env\\Scripts\\python.exe C:\\Users\\win11\\jarvis\\tools\\transcribe.py *)"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "node C:/Users/win11/jarvis/.claude/hooks/obzor-hint.js" } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "node C:/Users/win11/jarvis/.claude/hooks/speak.js" } ] }
+    ]
+  }
+}
